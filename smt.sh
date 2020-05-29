@@ -4,18 +4,18 @@ function hyperthreading {
 			pkexec tee /sys/devices/system/cpu/smt/control <<< off
 			# Update Julia settings
 			if [ -v $JULIA_NUM_THREADS ]; then
-				JULIA_NUM_THREADS=$(nproc)
-			else
 				exit 0;
+			else
+				JULIA_NUM_THREADS=$(nproc)
 			fi
 			;;
 		"ON")
 			pkexec tee /sys/devices/system/cpu/smt/control <<< on
 			# Update Julia settings
 			if [ -v $JULIA_NUM_THREADS ]; then
-				JULIA_NUM_THREADS=$(nproc);
+				exit 0;
 			else
-				exit 0
+				JULIA_NUM_THREADS=$(nproc);
 			fi
 			;;
 		*)
