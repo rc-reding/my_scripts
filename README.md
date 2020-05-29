@@ -21,12 +21,12 @@ Include the following in your `.bashrc` or `.profile` files by adding:
 a `.conf` file. This configuration file looks like:
 
   ```
-    /home/user/directory_A
-    /home/user/directory_B
-    /home/user/directory_C
-    /home/user/file_A.sh
-    /home/user/file_B.rs
-    /home/user/file_C.so
+    /home/user/directory\_A
+    /home/user/directory\_B
+    /home/user/directory\_C
+    /home/user/file\_A.sh
+    /home/user/file\_B.rs
+    /home/user/file\_C.so
   ```
   There can be different profiles, each with its own `.conf` and destination.
   By default, I added *HOME* and *WORK*. Simple. But you can add as many as you
