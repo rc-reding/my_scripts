@@ -19,7 +19,7 @@ function hyperthreading {
 			fi
 			;;
 		*)
-			printf "\nTo enable or disable hyperthreading dinamically, use ON or OFF."
+			printf "To enable or disable hyperthreading dinamically, use ON or OFF.\n"
 			;;
         esac
 }
