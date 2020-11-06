@@ -10,8 +10,14 @@ function backup {
 			DEST="/run/media/carlos/Elements/Work/College"
 			PROFILE="home"
 			;;
+		"CLONE")
+			CONFIG_FILE="$HOME/.config/rsync/home.conf"
+			DEST="/run/media/carlos/Canvio/Work/College"
+			PROFILE="home"
+			;;
 		*)
-			printf "%s\n" "The profile doesn't exist. Available profiles are: \`home', and \`work'."
+			printf "%s\n" "The profile doesn't exist. Available profiles are: \`home', \`work', and \`clone' (work)."
+			return 1
 			;;
 	esac
 	
