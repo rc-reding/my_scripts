@@ -5,11 +5,13 @@ Custom scripts to make (my) life easier
 
 Include the following in your `.bashrc` or `.profile` files by adding:
 
+    ```sh
     source $HOME/path_to/backup.sh
     source $HOME/path_to/nvidia.sh
     source $HOME/path_to/wifi.sh
     source $HOME/path_to/smt.sh
     source $HOME/path_to/man.sh
+    ```
 
 **NOTE**: Only tested in (Arch) GNU/Linux.
 
