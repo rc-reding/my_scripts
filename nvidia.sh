@@ -7,7 +7,7 @@ function nvidia {
 			pkexec tee /proc/acpi/bbswitch <<< ON
 			;;
 		*)
-			printf "\nTo enable or disable your discrete GPU, use ON or OFF."
+			printf "To enable or disable your discrete GPU, use ON or OFF.\n"
 			;;
 	esac
 }
